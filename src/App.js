@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/BingMap';
+import BingMap from './components/BingMap';
+import NavbarElement from './components/NavbarElement';
+import LocationInfo from './components/LocationInfo';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <NavbarElement></NavbarElement>
       </header>
+      <body>
+        <BingMap></BingMap>
+        <LocationInfo></LocationInfo>
+      </body>
+
+
     </div>
+
   );
 }
 
