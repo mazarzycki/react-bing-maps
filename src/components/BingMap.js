@@ -1,6 +1,7 @@
 import BingMapsReact from "bingmaps-react";
 import React from "react";
-import { Modal, Button } from 'react-bootstrap'
+import LocationInfo from './LocationInfo';
+import './BingMap.css'
 
 
 /* Locations  */
@@ -35,32 +36,30 @@ const varoValencia = {
 const pushPins = [amamAmsterdam, syleSydney, varoValencia]
 
 /* Map display */
-function BingMap() {
+class BingMap extends React.Component {
+  render() {
 
-  return (
-    <div onClick={() => { this.handleModal() }}>
-      <BingMapsReact
-        /* pushPins={<Button onClick={()=>{this.handleModal()}}>pushPins</Button>} */
+    return (
+      <div className="Maps">
+        <BingMapsReact
+          /* pushPins={<Button onClick={()=>{this.handleModal()}}>pushPins</Button>} */
 
-        pushPins={pushPins}
-        bingMapsKey="AnzQdBgh0eRESU6oN4gyIJOgXt_TZzn1WWbQrHOM4JuzFzbI9KHKHIz7hPcFYRnx"
-        height='500px' /* full screen = 900px */
-        mapOptions={{
-          navigationBarMode: "compact",
-        }}
+          pushPins={pushPins}
+          bingMapsKey="AnzQdBgh0eRESU6oN4gyIJOgXt_TZzn1WWbQrHOM4JuzFzbI9KHKHIz7hPcFYRnx"
+          height='900px' /* full screen = 900px */
+          mapOptions={{
+            navigationBarMode: "compact",
+          }}
 
-        viewOptions={{
-          zoom: 2.5,
-          mapTypeId: "canvasDark",
-        }}
-      />
-    </div>
-  );
+          viewOptions={{
+            zoom: 2.5,
+            mapTypeId: "canvasDark",
+          }}
+        />
+        <LocationInfo />
+      </div>
+
+    );
+  }
 }
-
-/* Modal */
-
-
-
-
 export default BingMap

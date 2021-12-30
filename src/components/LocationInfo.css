@@ -1,0 +1,68 @@
+.Info-Main {
+    border: black solid 2px;
+    width: 30%;
+    margin: auto;
+    background-color: #fff;
+    
+}
+
+.Info-Header {
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    padding: 1%;
+    cursor: move;
+}
+
+.Info-Upper {
+    padding: 1%;
+    margin: 1%;
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 222);
+    display: flex;
+}
+
+.Info-Upper-Left{
+    display: inline-block;
+    width: 65%;
+} 
+.Info-Upper-Right {
+    display: inline-block;
+    width: 25%;
+} 
+
+ul {
+    list-style-type: none;
+}
+
+.Info-Middle {
+    padding: 1%; 
+}
+
+.Info-Middle button {
+    padding: 1%;
+    margin: 1%;
+}
+
+button {
+    display: inline;
+    width: 20%;
+}
+
+button:hover {
+    color:rgb(162, 214, 214)
+}
+
+.Icon {
+    margin: 1%;
+}
+
+.Info-Bottom {
+    padding: 1%;
+    border: black solid 1px;
+    margin: 2%;
+}
+
+img {
+    width: 70%;
+}
