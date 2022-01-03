@@ -1,6 +1,6 @@
 import BingMapsReact from "bingmaps-react";
 import React from "react";
-import LocationInfo from './LocationInfo';
+
 import './BingMap.css'
 
 
@@ -42,11 +42,9 @@ class BingMap extends React.Component {
     return (
       <div className="Maps">
         <BingMapsReact
-          /* pushPins={<Button onClick={()=>{this.handleModal()}}>pushPins</Button>} */
-
           pushPins={pushPins}
           bingMapsKey="AnzQdBgh0eRESU6oN4gyIJOgXt_TZzn1WWbQrHOM4JuzFzbI9KHKHIz7hPcFYRnx"
-          height='900px' /* full screen = 900px */
+          height='900px'
           mapOptions={{
             navigationBarMode: "compact",
           }}
@@ -56,7 +54,7 @@ class BingMap extends React.Component {
             mapTypeId: "canvasDark",
           }}
         />
-        <LocationInfo />
+
       </div>
 
     );

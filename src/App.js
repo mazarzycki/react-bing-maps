@@ -2,7 +2,7 @@ import './App.css';
 import './components/BingMap';
 import BingMap from './components/BingMap';
 import NavbarElement from './components/NavbarElement';
-
+import LocationInfo from './components/LocationInfo';
 
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
         <NavbarElement></NavbarElement>
       </header>
       <body>
+      <LocationInfo />
         <BingMap></BingMap>
+        
         
       </body>
 

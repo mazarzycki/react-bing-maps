@@ -1,0 +1,7 @@
+.testButtonInvisible {
+    visibility: hidden;
+}
+
+.testButtonVisible {
+    visibility: visible;
+}

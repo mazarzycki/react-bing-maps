@@ -21,9 +21,9 @@ class LocationInfo extends React.Component {
                 <div className="Info-Upper-Left">
                   <ul>
                     <li><b>Status: </b> UP</li>
-                    <li><b>Address:</b> Amstelplein 1 18th Floor</li>
-                    <li><b>City:</b> Amsterdam</li>
-                    <li><b>Country:</b> Netherlands</li>
+                    <li><b>Address:</b> Some street</li>
+                    <li><b>City:</b> Some city</li>
+                    <li><b>Country:</b> Some country</li>
                     <li><b>Region:</b> EMEA</li>
                   </ul>
 
